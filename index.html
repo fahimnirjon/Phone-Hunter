@@ -42,7 +42,7 @@
     </header>
     <main class="container mx-auto">
         <section>
-          <div class="text-center my-40">
+          <div id="spin-loadding" class="text-center my-40 hidden">
             <span class="loading loading-spinner loading-lg"></span>
           </div>
             <div id="phone-container" class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
@@ -61,8 +61,30 @@
             </div>
 
             <!-- show all -->
-            <button id="show-button" class="btn btn-outline hidden">Show More</button>
+           <div id="show-button" class="text-center my-10 hidden">
+            <button  class="btn btn-outline">Show More</button>
+           </div>
         </section>
+
+<!-- show modal -->
+
+        <!-- Open the modal using ID.showModal() method -->
+  <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+    
+    <form method="dialog" class="modal-box">
+      <!-- if there is a button in form, it will close the modal -->
+      <h3 id="phone-name" class="font-bold text-3xl"></h3>
+      <div id="all-container">
+
+      </div>
+      <div class="modal-action">
+      
+        <button class="btn">Close</button>
+        </div>
+     </form>
+    
+    </dialog>
+
     </main>
     <footer>
 
